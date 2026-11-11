@@ -10,11 +10,11 @@
         "lint": "next lint",
         "prod": "next build && next start",
         "format": "prettier . --write",
-        "check": "pnpm run lint && prettier . --write",
+        "check": "npm run lint && prettier . --write",
         "start": "next start && electron .",
         "electron-dev": "electron .",
         "clean": "rimraf dist out .next",
-        "build": "pnpm run clean && pnpm run rebuild && next build && pnpm exec electron-builder",
+        "build": "npm run clean && npm run rebuild && next build && npm exec electron-builder",
         "rebuild": "electron-rebuild",
         "postinstall": "electron-builder install-app-deps"
     },
